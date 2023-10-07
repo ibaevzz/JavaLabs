@@ -1,6 +1,12 @@
+import computer.Computer;
+import computer.memory.BrandMemory;
+import computer.monitor.BrandMonitor;
+import computer.processor.BrandProcessor;
+
 public class Main {
     public static void main(String[] args) {
-        Seasons myFavoriteTime = Seasons.Spring;
+        new Computer(BrandMonitor.Acer, BrandProcessor.AMD, BrandMemory.AMD).start();
+        /*Seasons myFavoriteTime = Seasons.Spring;
 
         iLove(myFavoriteTime);
         myFavoriteTime.getDescription();
@@ -9,7 +15,7 @@ public class Main {
             System.out.println(season);
             season.getDescription();
             System.out.println(season.getTemp());
-        }
+        }*/
     }
     public static void iLove(Seasons season){
         switch (season){
